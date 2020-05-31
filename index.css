@@ -1,0 +1,191 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+ 
+  /*--------------------------Page Title--------------------------*/
+  header {
+    position: absolute;
+    z-index: 88;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: top;
+    min-height: 700px;
+  }
+
+  .headertext {
+    height: 80%;
+    background-color: rgba(4, 163, 190, 0.8);
+    margin-left: 10%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+  }
+
+  .headertext-container {
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    margin-top: 20%;
+  }
+
+  header h1 {
+    font-family: 'Khula', sans-serif;
+    color: white;
+    font-size: 70px;
+    line-height: 60px;
+    margin: 0;
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+  
+  .headerline {
+    height: 5px;
+    background-color: rgb(19, 19, 19);
+    width: 250px;
+    margin-top: 15px;
+  }
+  
+  header h2 {
+    color: white;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  
+  /*--------------------------Parallax--------------------------*/
+  #parallaxcontainer {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: -88; 
+    min-height: 700px;
+  }
+  
+  #parallaxcontainer div {
+    background-position: 10% 0px;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    min-height: 700px;
+  }
+  
+  .fourthpic {
+    background: url(par4.jpg);
+  }
+  
+  .thirdpic {
+    background: url(par3.png);
+  }
+  
+  .secondpic {
+    background: url(par2.png);
+  }
+  
+  .firstpic {
+    background: url(par1.png);
+  }
+  
+  
+  /*--------------------------about--------------------------*/
+  .about {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 90px;
+    box-sizing: border-box;
+  }
+  
+  .about h1 {
+    font-family: 'Khula', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(19, 19, 19);
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about p {
+    max-width: 900px;
+    font-size: 18px;
+    color: rgb(19, 19, 19);
+    margin: auto;
+  }
+  
+  .polaroid {
+    margin-top: -3px;
+    text-align: center;
+    background-color: white;
+  }
+
+  .polaroid img {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+  }
+  
+
+/*--------------------------Media Queries--------------------------*/
+@media only screen and (max-width: 800px) {
+header {
+
+  width: 100%;
+  height: auto;
+  min-height: 0px;
+}
+
+.headertext {
+  width: 100%;
+    height: auto;
+  margin-left: 0%;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.headertext-container {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  margin-top: 0%;
+}
+
+header h1 {
+  font-family: 'Khula', sans-serif;
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 350px;
+}
+
+.headerline {
+  height: 5px;
+  background-color: rgb(19, 19, 19);
+  width: 250px;
+  margin-top: 15px;
+}
+
+header h2 {
+  color: white;
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  margin-top: 15px;
+}
+}
